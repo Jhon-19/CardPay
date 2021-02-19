@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CardPay</string>
+    <string name="user">用户账号:</string>
+    <string name="login_pwd">统一认证密码:</string>
+    <string name="charge_pwd">充值密码:</string>
+    <string name="charge_money">充值金额:</string>
+    <string name="charge">确认充值</string>
+    <string name="flow_info">流水信息</string>
+
+<!--    提示-->
+    <string name="user_hint">请输入学号</string>
+    <string name="login_pwd_hint">请输入统一认证密码</string>
+    <string name="charge_pwd_hint">请输入充值密码(6位数字)</string>
+    <string name="charge_money_hint">请输入充值金额(正整数)</string>
+
+<!--    显示余额-->
+    <string name="balance">卡片余额</string>
+    <string name="querying">查询中…</string>
+</resources>

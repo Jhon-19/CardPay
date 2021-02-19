@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/check_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2F0CF8"
+            android:text="@string/balance"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/balance_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/querying"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/flow_infos_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2F0CF8"
+            android:text="@string/flow_info"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <TextView
+                style="@style/UserText"
+                android:layout_row="0"
+                android:text="@string/user" />
+
+            <EditText
+                android:id="@+id/user_text"
+                style="@style/UserEditText"
+                android:layout_row="0"
+                android:hint="@string/user_hint"
+                android:inputType="number"
+                android:maxLength="13"
+                android:theme="@style/EditTheme" />
+
+            <TextView
+                style="@style/UserText"
+                android:layout_row="1"
+                android:text="@string/login_pwd" />
+
+            <EditText
+                android:id="@+id/login_pwd_text"
+                style="@style/UserEditText"
+                android:layout_row="1"
+                android:hint="@string/login_pwd_hint"
+                android:theme="@style/EditTheme" />
+
+            <TextView
+                style="@style/UserText"
+                android:layout_row="2"
+                android:text="@string/charge_pwd" />
+
+            <EditText
+                android:id="@+id/charge_pwd_text"
+                style="@style/UserEditText"
+                android:layout_row="2"
+                android:hint="@string/charge_pwd_hint"
+                android:maxLength="6"
+                android:theme="@style/EditTheme" />
+
+            <TextView
+                style="@style/UserText"
+                android:layout_row="3"
+                android:text="@string/charge_money" />
+
+            <EditText
+                android:id="@+id/charge_money_text"
+                style="@style/UserEditText"
+                android:layout_row="3"
+                android:hint="@string/charge_money_hint"
+                android:inputType="number"
+                android:theme="@style/EditTheme" />
+        </GridLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/charge_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#A8574CED"
+        android:text="@string/charge"
+        android:textSize="20sp" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+</LinearLayout>
